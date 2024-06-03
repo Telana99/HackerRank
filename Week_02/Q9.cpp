@@ -6,8 +6,9 @@ int main() {
     cin >> n >> q;
 
     // Allocate an array of pointers to arrays
-    int** arrays = new int*[n];
-    int* sizes = new int[n];
+    int** arrays = new int*[n];//allocates an array of pointers. Each pointer will point to a dynamically allocated array of integers.
+    int* sizes = new int[n];// keeps track of the sizes of each array to ensure we allocate and deallocate correctly.
+
 
     // Read each array
     for (int i = 0; i < n; ++i) {
